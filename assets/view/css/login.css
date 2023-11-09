@@ -14,6 +14,14 @@ body {
     width: 100%;
 }
 
+.logo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 300%;
+    height: auto;
+}
+
 .container {
     width: 100%;
     max-width: 800px;
