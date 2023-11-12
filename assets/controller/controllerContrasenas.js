@@ -12,3 +12,14 @@ btnIniciar.addEventListener('click', function () {
     }, 3000);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const btnRegistraR = document.getElementById('btnRegistraR');
+    btnRegistraR.addEventListener('click', validarRegistro);
+  });
+  
+  function validarRegistro() {
+    // Aquí puedes agregar lógica adicional para validar el formulario de registro antes de enviarlo al servidor
+    alert('Formulario de registro validado con éxito');
+    // Agrega aquí la lógica para enviar los datos al servidor si es necesario
+  }
+  

@@ -178,3 +178,15 @@ body {
   
   
   }  
+
+
+
+.logotipo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logotipo img {
+    width: 150px; /* Ajusta el tamaño del logotipo según tus necesidades */
+    height: auto;
+}
