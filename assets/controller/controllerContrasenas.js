@@ -12,3 +12,32 @@ btnIniciar.addEventListener('click', function () {
     }, 3000);
 });
 
+let registrarGastos = document.getElementById('registrarGastos')
+listar.addEventListener('click', function () {
+    document.getElementById('sectionRegistrarGastos').innerHTML = '3'
+    document.getElementById('sectionListarGastos').style.zIndex = '2'
+    document.getElementById('sectionMovimientosGastos').style.zIndex = '2'
+    document.getElementById('sectionCrear').style.zIndex = '2'
+    contrasenas.map((password) => {
+        /*singular del arreglo*/
+        
+    
+    })
+})
+
+let listarGastos = document.getElementById('listarGastos')
+
+buscar.addEventListener('click', function () {
+    document.getElementById('sectionRegistrarGastos').style.zIndex = '2'
+    document.getElementById('sectionListarGastos').style.zIndex = '3'
+    document.getElementById('sectionMovimientosGastos').style.zIndex = '2'
+
+})
+let movimientosGastos = document.getElementById('movimientosGastos')
+crear.addEventListener('click', function () {
+    document.getElementById('sectionRegistrarGastos').style.zIndex = '2'
+    document.getElementById('sectionListarGastos').style.zIndex = '2'
+    document.getElementById('sectionMovimientosGastos').style.zIndex = '3'
+
+})
+
