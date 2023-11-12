@@ -13,7 +13,7 @@ btnIniciar.addEventListener('click', function () {
 });
 
 let registrarGastos = document.getElementById('registrarGastos')
-listar.addEventListener('click', function () {
+registrarGastos.addEventListener('click', function () {
     document.getElementById('sectionRegistrarGastos').innerHTML = '3'
     document.getElementById('sectionListarGastos').style.zIndex = '2'
     document.getElementById('sectionMovimientosGastos').style.zIndex = '2'
@@ -27,14 +27,14 @@ listar.addEventListener('click', function () {
 
 let listarGastos = document.getElementById('listarGastos')
 
-buscar.addEventListener('click', function () {
+listarGastos.addEventListener('click', function () {
     document.getElementById('sectionRegistrarGastos').style.zIndex = '2'
     document.getElementById('sectionListarGastos').style.zIndex = '3'
     document.getElementById('sectionMovimientosGastos').style.zIndex = '2'
 
 })
 let movimientosGastos = document.getElementById('movimientosGastos')
-crear.addEventListener('click', function () {
+movimientosGastos.addEventListener('click', function () {
     document.getElementById('sectionRegistrarGastos').style.zIndex = '2'
     document.getElementById('sectionListarGastos').style.zIndex = '2'
     document.getElementById('sectionMovimientosGastos').style.zIndex = '3'
