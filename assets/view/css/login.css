@@ -173,7 +173,7 @@ body {
     display: none;
   }
   
-  .spinner {
+  .spinner {    
     background-color: black;
   }  
 
@@ -230,6 +230,46 @@ header {
     flex-wrap: wrap;
     gap: 10px;
 }
+
+#registrarGastos{
+    background-color: transparent;
+    color: #ffffff;
+    padding: 13px 36px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    position: relative;
+}
+
+#listarGastos{
+    background-color: transparent;
+    color: #ffffff;
+    padding: 13px 36px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    position: relative;
+}
+
+#movimientosGastos{
+    
+    background-color: transparent;
+    color: #ffffff;
+    padding: 13px 36px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    position: relative;
+}
+
+#CerrarSesion{
+    
+    background-color: transparent;
+    color: #ffffff;
+    padding: 13px 36px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    position: relative;
+}
+
+
 
   
  
