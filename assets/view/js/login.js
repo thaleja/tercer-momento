@@ -78,8 +78,9 @@ let usuario = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
 let contrasena = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
 
 function validarFormulario(e) {
-  console.log(e);
-  switch (e.target.name) {
+  let inputName = e.target.name;
+
+  switch (inputName) {
     case "usuario":
       if (usuario.test(e.target.value)) {
         document.getElementById("usuario").style.backgroundColor = "green";
@@ -90,19 +91,40 @@ function validarFormulario(e) {
     case "contrasena":
       if (contrasena.test(e.target.value)) {
         document.getElementById("contrasena").style.backgroundColor = "green";
-        console.log(e.target.value)
+        console.log(e.target.value);
       } else {
         document.getElementById("contrasena").style.backgroundColor = "red";
-        console.log(e.target.value)
+        console.log(e.target.value);
       }
       break;
     case "correo":
       if (correo.test(e.target.value)) {
         document.getElementById("correo").style.backgroundColor = "green";
-        console.log(e.target.value)
       } else {
         document.getElementById("correo").style.backgroundColor = "red";
-        console.log(e.target.value)
+      }
+      break;
+
+    // Agregar lógica para el formulario de registro
+    case "usuarioRegistro":
+      if (usuario.test(e.target.value)) {
+        document.getElementById("usuarioRegistro").style.backgroundColor = "green";
+      } else {
+        document.getElementById("usuarioRegistro").style.backgroundColor = "red";
+      }
+      break;
+    case "contrasenaRegistro":
+      if (contrasena.test(e.target.value)) {
+        document.getElementById("contrasenaRegistro").style.backgroundColor = "green";
+      } else {
+        document.getElementById("contrasenaRegistro").style.backgroundColor = "red";
+      }
+      break;
+    case "correoRegistro":
+      if (correo.test(e.target.value)) {
+        document.getElementById("correoRegistro").style.backgroundColor = "green";
+      } else {
+        document.getElementById("correoRegistro").style.backgroundColor = "red";
       }
       break;
   }

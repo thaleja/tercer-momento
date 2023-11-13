@@ -175,9 +175,24 @@ body {
   
   .spinner {
     background-color: black;
-  
-  
   }  
+
+header {
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.logotipo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logotipo img {
+    width: 150px; /* Ajusta el tamaño del logotipo según tus necesidades */
+    height: auto;
+}
+
 
   .panel header{
     width: 30%;
@@ -214,16 +229,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-  }
+}
+
   
+ 
+
   
-  
-  
-
-
-
-
-
-
 
 

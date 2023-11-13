@@ -12,6 +12,7 @@ btnIniciar.addEventListener('click', function () {
     }, 3000);
 });
 
+
 let registrarGastos = document.getElementById('registrarGastos')
 registrarGastos.addEventListener('click', function () {
     document.getElementById('sectionRegistrarGastos').innerHTML = '3'
@@ -40,4 +41,17 @@ movimientosGastos.addEventListener('click', function () {
     document.getElementById('sectionMovimientosGastos').style.zIndex = '3'
 
 })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const btnRegistraR = document.getElementById('btnRegistraR');
+    btnRegistraR.addEventListener('click', validarRegistro);
+  });
+  
+  function validarRegistro() {
+    // Aquí puedes agregar lógica adicional para validar el formulario de registro antes de enviarlo al servidor
+    alert('Formulario de registro validado con éxito');
+    // Agrega aquí la lógica para enviar los datos al servidor si es necesario
+  }
+  
 
