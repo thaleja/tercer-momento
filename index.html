@@ -69,7 +69,14 @@
             <button id="CerrarSesion"> Cerrar Sesion</button>
           </header>
           <div>
-            <section id="sectionRegistrarGastos">Registrar Gastos</section>
+            <section id="sectionRegistrarGastos">
+                <form action="">
+                    <input id="categoria" type="text">
+                    <input id="descripcion" type="text">
+                    <input id="valor" type="text">
+                    <input id="btnGuardar" type="button" value="Guardar">
+                </form>
+            </section>
             <section id="sectionListarGastos">Listar Gastos</section>
           <section id="sectionMovimientosGastos">Movimientos Gastos</section>
           </div>
@@ -79,7 +86,7 @@
 
 
     <script type="module" src="./assets/view/js/login.js"></script>
-    <script type="module" src="./assets/controller/controllerContrasenas.js"></script>
+    <script type="module" src="./assets/controller/ControllerGastos.js"></script>
 </body>
 
 </html>
