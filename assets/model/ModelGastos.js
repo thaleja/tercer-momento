@@ -5,3 +5,8 @@ export let gastos = [
         valor: 15000,   
     },
 ]
+
+export let usuarioInicioSesion = [
+    {  usuario :'cristian'
+    },
+]
