@@ -1,94 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./assets/view/css/login.css" />
+      <title>cajamenor</title>
+   </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/view/css/login.css">
-    <title>cajamenor</title>
-</head>
+   <header>
+      <div class="logotipo">
+         <img class="logo" src="/assets/view/img/mcjdev.png" alt="logo" />
+      </div>
+   </header>
 
-<header>
-    <div class="logotipo">
-        <img class="logo" src="/assets/view/img/mcjdev.png" alt="logo">
-    </div>
-</header>
-
-<body>
-    <div class="container">
-        <div class="cajaTrasera">
+   <body>
+      <div class="container">
+         <div class="cajaTrasera">
             <div class="cajaTraseraLogin">
-                <h3>Ya tienes una cuenta?</h3>
-                <p>Inicia sesion para entrar </p>
-                <button id="btnIniciarSesion"> Iniciar sesion</button>
+               <h3>Ya tienes una cuenta?</h3>
+               <p>Inicia sesion para entrar</p>
+               <button id="btnIniciarSesion">Iniciar sesion</button>
             </div>
             <div class="cajaTraseraRegistro">
-                <h3>No tienes cuenta?</h3>
-                <p>Registrate para iniciar sesion</p>
-                <button id="btnRegistrar">registrase</button>
+               <h3>No tienes cuenta?</h3>
+               <p>Registrate para iniciar sesion</p>
+               <button id="btnRegistrar">registrase</button>
             </div>
-        </div>
+         </div>
 
-        <div class="login-registro">
-
+         <div class="login-registro">
             <section id="login" class="form-login visible">
-                <h5>Inicio de sesión</h5>
-                <h4 id="mensaje"></h4>
-                <input class="controls" type="text" placeholder="Usuario" id="usuario" name="usuario" />
-                <input class="controls" type="password" placeholder="Contraseña" id="contrasena" name="contrasena" />
-                <input id="btnIniciar" class="buttons" type="button" value="Ingresar" />
-                <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
+               <h5>Inicio de sesión</h5>
+               <h4 id="mensaje"></h4>
+               <input
+                  class="controls"
+                  type="text"
+                  placeholder="Usuario"
+                  id="usuario"
+                  name="usuario" />
+               <input
+                  class="controls"
+                  type="password"
+                  placeholder="Contraseña"
+                  id="contrasena"
+                  name="contrasena" />
+               <input
+                  id="btnIniciar"
+                  class="buttons"
+                  type="button"
+                  value="Ingresar" />
+               <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
             </section>
 
             <section id="registro" class="form-registro hidden">
-                <h5>Registro de usuario</h5>
-                <input class="controls" type="text" placeholder="Nombre completo" id="usuarioRegistro"
-                    name="usuarioRegistro" />
-                <input class="controls" type="password" placeholder="Contraseña" id="contrasenaRegistro"
-                    name="contrasenaRegistro" />
-                <input class="controls" type="text" placeholder="Correo electrónico" id="correoRegistro"
-                    name="correoRegistro" />
-                <input id="btnRegistraR" class="buttons" type="button" value="Registrar" />
+               <h5>Registro de usuario</h5>
+               <input
+                  class="controls"
+                  type="text"
+                  placeholder="Nombre completo"
+                  id="usuarioRegistro"
+                  name="usuarioRegistro" />
+               <input
+                  class="controls"
+                  type="password"
+                  placeholder="Contraseña"
+                  id="contrasenaRegistro"
+                  name="contrasenaRegistro" />
+               <input
+                  class="controls"
+                  type="text"
+                  placeholder="Correo electrónico"
+                  id="correoRegistro"
+                  name="correoRegistro" />
+               <input
+                  id="btnRegistraR"
+                  class="buttons"
+                  type="button"
+                  value="Registrar" />
             </section>
+         </div>
+      </div>
 
+      <section id="spinner" class="spinner">
+         <img
+            src="data:image/png;base64,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" />
+      </section>
 
-
-        </div>
-    </div>
-
-
-    <section id="spinner" class="spinner">
-        <img
-            src="data:image/png;base64,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">
-    </section>
-
-    <main id="panel" class="panel">
-        <header>
+      <main id="panel" class="panel">
+         <header>
             <span id="nombreUsuarioSpan"></span>
             <button id="registrarGastos">Registrar Gastos</button>
             <button id="listarGastos">Listar Gastos</button>
             <button id="movimientosGastos">Movimientos Gastos</button>
-            <button id="cerrarSesion"> Cerrar Sesion</button>
-        </header>
-        <div>
+            <button id="cerrarSesion">Cerrar Sesion</button>
+         </header>
+         <div>
             <section id="sectionRegistrarGastos">
-                <form action="">
-                    <input id="categoria" type="text">
-                    <input id="descripcion" type="text">
-                    <input id="valor" type="text">
-                    <input id="btnGuardar" type="button" value="Guardar">
-                </form>
+               <form action="">
+                  <label for="gcategoria" class="">Categoria</label>
+                  <select id="gcategoria" class="categoria" r required>
+                     <option id="Negocios" value="business">Negocios</option>
+                     <option id="Diversion" value="fun">Diversion</option>
+                     <option id="Trasnporte" value="trasnportation">
+                        Trasnporte
+                     </option>
+                     <option id="comida" value="meal">comida</option>
+                  </select>
+                  <label for="gdescripcion"></label>
+                  <input
+                     placeholder="Descripcion"
+                     id="gdescripcion"
+                     type="text" />
+                  <label for="gvalor"></label>
+                  <input id="gvalor" placeholder="Valor" type="number" />
+                  <label for="gfecha"></label>
+                  <input placeholder="Fecha" id="gfecha" type="date" />
+                  <input type="button" value="Guardar" id="btnGuardar" />
+               </form>
             </section>
-            <section id="sectionListarGastos">Listar Gastos</section>
+            <section class="sectionBuscar" id="sectionBuscar">
+               Buscar
+               <label for="gcategoriaBuscar">Selecciona una categoría:</label>
+            </section>
+            <section id="sectionListar">Listar Gastos</section>
             <section id="sectionMovimientosGastos">Movimientos Gastos</section>
-        </div>
+         </div>
 
-        <section></section>
-    </main>
+         <section></section>
+      </main>
 
-
-    <script type="module" src="./assets/view/js/login.js"></script>
-    <script type="module" src="./assets/controller/ControllerGastos.js"></script>
-</body>
-
+      <script type="module" src="./assets/view/js/login.js"></script>
+      <script
+         type="module"
+         src="./assets/controller/ControllerGastos.js"></script>
+   </body>
 </html>
